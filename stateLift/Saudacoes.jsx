@@ -1,9 +1,15 @@
 const Saudacoes = ({ name }) => {
   return (
-    <div>
-      <h1>Componente Filho</h1>
-      <p>Saudações: {name}</p>
-    </div>
+    <>
+      {name && (
+        <div>
+          <h2>
+            Componente Filho <span>(condicional)</span>{" "}
+          </h2>
+          <p>Saudações: {name}</p>
+        </div>
+      )}
+    </>
   );
 };
 
